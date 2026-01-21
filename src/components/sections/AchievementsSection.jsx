@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Trophy, Award, Star, Target, Rocket, Users } from 'lucide-react';
+import { Trophy, Users, Star, Target, Cpu, Award, Rocket } from 'lucide-react';
 
 const AchievementsSection = () => {
   const ref = useRef(null);
@@ -12,33 +12,33 @@ const AchievementsSection = () => {
     {
       icon: Trophy,
       title: 'Company Registration',
-      description: 'Successfully registered BLACKVOLT Technologies Pvt. Ltd. with government agencies',
-      date: '2024'
-    },
-    {
-      icon: Rocket,
-      title: 'Project Initiation',
-      description: 'Launched ambitious Manta Ray replication project with advanced AI integration',
-      date: '2024'
-    },
-    {
-      icon: Star,
-      title: 'Technology Development',
-      description: 'Developed proprietary swarm intelligence algorithms for drone coordination',
+      description: 'BLACKVOLT Technologies Pvt. Ltd. formally incorporated.',
       date: '2024'
     },
     {
       icon: Target,
-      title: 'Prototype Testing',
-      description: 'Successful initial testing of autonomous navigation systems',
+      title: 'Project Initiation',
+      description: 'Launch of internal research programs focused on underwater autonomy.',
       date: '2024'
+    },
+    {
+      icon: Cpu,
+      title: 'Technology Development',
+      description: 'Development of proprietary autonomy and sensor-fusion frameworks.',
+      date: '2025'
+    },
+    {
+      icon: Star,
+      title: 'Prototype Testing',
+      description: 'Successful controlled-environment testing of navigation and control subsystems.',
+      date: '2025 (Year-End)'
     }
   ];
 
   const stats = [
-    { number: '100+', label: 'Hours of Development', icon: Users },
-    { number: '5+', label: 'AI Models Trained', icon: Award },
-    { number: '3', label: 'Drone Prototypes', icon: Rocket },
+    { number: '100+', label: 'Hours of R&D', icon: Users },
+    { number: '5+', label: 'AI Models Developed', icon: Cpu },
+    { number: '3', label: 'Functional Prototypes', icon: Target },
     { number: '1', label: 'Registered Company', icon: Trophy }
   ];
 
@@ -55,7 +55,7 @@ const AchievementsSection = () => {
             Our Achievements
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Milestones and recognitions that mark our journey towards revolutionizing India's defense technology.
+            Milestones reflecting early technical progress, engineering discipline, and execution as a deep-tech startup.
           </p>
         </motion.div>
 
@@ -103,9 +103,9 @@ const AchievementsSection = () => {
                   <p className="text-muted-foreground">{achievement.description}</p>
                 </div>
               </div>
-              
+
               <div className="hidden md:block w-4 h-4 bg-accent rounded-full pulse-glow" />
-              
+
               <div className="flex-1 hidden md:block" />
             </motion.div>
           ))}
@@ -120,24 +120,23 @@ const AchievementsSection = () => {
           <div className="glass-effect glow-border rounded-2xl p-8">
             <h3 className="text-3xl font-bold text-foreground mb-6 heading-font">Looking Ahead</h3>
             <p className="text-xl text-muted-foreground mb-6 max-w-3xl mx-auto">
-              As our journey has just begun, we're committed to achieving great milestones 
-              in defense technology and contributing to India's technological sovereignty.
+              Our near-term roadmap is tightly aligned around maturing the UUV platform.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="glass-effect rounded-xl p-6">
                 <Target className="text-accent w-8 h-8 mx-auto mb-4" />
                 <h4 className="font-bold text-foreground mb-2">2025 Goals</h4>
-                <p className="text-muted-foreground text-sm">Complete Manta Ray prototype and begin field testing</p>
+                <p className="text-muted-foreground text-sm">Complete a fully integrated autonomous UUV and begin extended testing.</p>
               </div>
               <div className="glass-effect rounded-xl p-6">
-                <Rocket className="text-accent w-8 h-8 mx-auto mb-4" />
-                <h4 className="font-bold text-foreground mb-2">Expansion Plans</h4>
-                <p className="text-muted-foreground text-sm">Scale operations and establish strategic partnerships</p>
+                <Users className="text-accent w-8 h-8 mx-auto mb-4" />
+                <h4 className="font-bold text-foreground mb-2">Collaboration</h4>
+                <p className="text-muted-foreground text-sm">Work closely with academic labs and industry partners.</p>
               </div>
               <div className="glass-effect rounded-xl p-6">
                 <Award className="text-accent w-8 h-8 mx-auto mb-4" />
-                <h4 className="font-bold text-foreground mb-2">Recognition</h4>
-                <p className="text-muted-foreground text-sm">Seek government contracts and industry recognition</p>
+                <h4 className="font-bold text-foreground mb-2">Engagement</h4>
+                <p className="text-muted-foreground text-sm">Participate in defence-aligned research programs.</p>
               </div>
             </div>
           </div>

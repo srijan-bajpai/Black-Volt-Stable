@@ -1,7 +1,7 @@
 import logo from '@/assets/logo.png';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Shield, Zap, Target } from 'lucide-react';
+import { ChevronDown, Shield, Anchor, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
 
@@ -21,12 +21,12 @@ const HeroSection = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 tech-grid opacity-20" />
       <div className="absolute inset-0 hero-bg" />
-      
+
       <div className="absolute top-20 left-10 floating-animation">
         <Shield className="text-accent w-8 h-8 opacity-60" />
       </div>
       <div className="absolute top-40 right-20 floating-animation" style={{ animationDelay: '2s' }}>
-        <Zap className="text-accent w-6 h-6 opacity-60" />
+        <Anchor className="text-accent w-6 h-6 opacity-60" />
       </div>
       <div className="absolute bottom-40 left-20 floating-animation" style={{ animationDelay: '4s' }}>
         <Target className="text-accent w-7 h-7 opacity-60" />
@@ -67,30 +67,25 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-foreground font-semibold max-w-4xl mx-auto leading-relaxed"
           >
-            Pioneering AI-Powered Defense Drones for India's Security
-            <br />
-            <span className="text-foreground font-semibold"></span>
+            Engineering Autonomous Underwater Systems for Extreme Environments
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed"
+          >
+            Blackvolt Technologies is a deep-tech startup focused on the design, development, and validation of autonomous unmanned underwater vehicles (UUVs) for operation in communication-denied, low-visibility, and high-uncertainty environments.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="glass-effect glow-border rounded-2xl p-6 max-w-3xl mx-auto"
-          >
-            <p className="text-lg text-foreground/90">
-              Developing cutting-edge autonomous and swarm drone technology to strengthen India's defense capabilities 
-              through innovation, patriotism, and technological excellence.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8"
           >
             <Button
               onClick={() => {
@@ -106,7 +101,7 @@ const HeroSection = () => {
               onClick={() => document.querySelector('#drones').scrollIntoView({ behavior: 'smooth' })}
               className="border-accent text-accent hover:bg-accent hover:text-background px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300"
             >
-              Explore Our Domains of Interest
+              Explore the UUV Platform
             </Button>
           </motion.div>
 
@@ -114,10 +109,10 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 1.2 }}
-            className="inline-flex items-center space-x-2 glass-effect rounded-full px-6 py-3 border border-green-400/30"
+            className="inline-flex items-center space-x-2 glass-effect rounded-full px-6 py-3 border border-green-400/30 mt-8"
           >
             <Shield className="text-green-400 w-5 h-5" />
-            <span className="text-green-400 font-medium">Registered with Government Agencies</span>
+            <span className="text-green-400 font-medium">Inducted with VNEST, Registered with Government Agencies</span>
           </motion.div>
         </motion.div>
 

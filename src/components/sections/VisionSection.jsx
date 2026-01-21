@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Heart, Flag, Shield, Lightbulb } from 'lucide-react';
+import { Lightbulb, Wrench, Shield, Flag } from 'lucide-react';
 
 const VisionSection = () => {
   const ref = useRef(null);
@@ -10,24 +10,24 @@ const VisionSection = () => {
 
   const values = [
     {
-      icon: Heart,
-      title: 'Patriotic Drive',
-      description: 'Fueled by love for our nation and commitment to its security'
+      icon: Lightbulb,
+      title: 'Innovation First',
+      description: 'Pursuing original approaches to underwater autonomy through modeling, experimentation, and iterative prototyping.'
     },
     {
-      icon: Flag,
-      title: 'National Pride',
-      description: 'Building indigenous technology to reduce dependency on other countries'
+      icon: Wrench,
+      title: 'Engineering Rigor',
+      description: 'Evaluating every subsystem against real-world underwater constraints, failure modes, and operational limits.'
     },
     {
       icon: Shield,
-      title: 'Defense Excellence',
-      description: 'Creating world-class defense solutions for India\'s protection'
+      title: 'Indigenous Capability',
+      description: 'Developing core autonomy, control, and system architecture in-house to reduce reliance on external technologies.'
     },
     {
-      icon: Lightbulb,
-      title: 'Innovation First',
-      description: 'Pushing boundaries with cutting-edge AI and drone technology'
+      icon: Flag,
+      title: 'National Responsibility',
+      description: 'Building systems intended to strengthen maritime security, resilience, and long-term technological independence.'
     }
   ];
 
@@ -41,10 +41,12 @@ const VisionSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold heading-font mb-6">
-            Why We Do This
+            Why We Exist
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          We’re a group of college students who want to make a real difference by building technologies that can strengthen our country's defense. Our motivation comes from a well-rounded mix of passion, curiosity, and love for our great country.
+            Underwater environments represent one of the most challenging operational domains for autonomous systems.
+            Severe signal attenuation, unreliable localization, limited sensing, and strict energy constraints make traditional robotic approaches insufficient.
+            We believe underwater autonomy must be researched, engineered, tested, and refined within India.
           </p>
         </motion.div>
 
@@ -58,17 +60,12 @@ const VisionSection = () => {
             <div className="glass-effect glow-border rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-foreground mb-4 heading-font">Our Vision</h3>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                To revolutionize India's defense landscape by developing autonomous AI-powered drones 
-                that match and exceed international standards. We aim to replicate and enhance the 
-                capabilities of advanced systems like the DARPA's Manta Ray, ensuring our nation's 
-                technological sovereignty in defense.
+                To contribute to India’s long-term maritime and strategic autonomy by developing indigenous unmanned underwater systems capable of intelligent, sustained, and cooperative operation without continuous external support.
               </p>
-              
+
               <h3 className="text-2xl font-bold text-foreground mb-4 heading-font">Our Mission</h3>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                To bridge the gap between cutting-edge research and practical defense applications, 
-                creating swarm intelligence systems that can operate autonomously in complex environments 
-                while maintaining the highest standards of reliability and security.
+                To design, prototype, and validate a mission-grade autonomous UUV platform that integrates robust underwater perception, intelligent navigation, resilient communication, energy-aware design, and cooperative multi-agent behavior.
               </p>
             </div>
           </motion.div>
@@ -77,7 +74,7 @@ const VisionSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="grid grid-cols-2 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
           >
             {values.map((value, index) => (
               <motion.div
@@ -103,10 +100,10 @@ const VisionSection = () => {
         >
           <div className="glass-effect glow-border rounded-2xl p-8 max-w-4xl mx-auto">
             <blockquote className="text-2xl md:text-3xl font-medium text-foreground italic mb-4">
-              "Innovation is our weapon, patriotism is our fuel, and India's security is our ultimate goal."
+              "We approach this challenge with humility, recognizing the complexity of real-world deployment and the importance of rigorous feedback."
             </blockquote>
             <p className="text-muted-foreground">
-              - Our Motto at <span className="font-bold italic text-foreground text-lg tracking-wide">BLACKVOLT</span>
+              - <span className="font-bold italic text-foreground text-lg tracking-wide">BLACKVOLT</span> Philosophy
             </p>
           </div>
         </motion.div>

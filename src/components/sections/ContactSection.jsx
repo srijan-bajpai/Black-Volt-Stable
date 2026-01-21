@@ -37,20 +37,20 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'info@blackvolt.tech',
+      details: 'info@blackvolt.in',
       description: 'Send us your inquiries and partnership proposals'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: '+91 XXXX-XXXX-XX',
+      details: '+91-85306-75353',
       description: 'Speak directly with our team'
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: 'India',
-      description: 'Registered office location'
+      details: 'VNEST Office, VIT Chennai',
+      description: '600127, AB3 Ground Floor, Vandalur-Kelambakkam Road, Chennai, Tamilnadu, India'
     }
   ];
 
@@ -67,7 +67,7 @@ const ContactSection = () => {
             Contact Us
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to discuss partnerships, collaborations, or learn more about our technology? 
+            Ready to discuss partnerships, collaborations, or learn more about our technology?
             We'd love to hear from you.
           </p>
         </motion.div>
@@ -82,8 +82,7 @@ const ContactSection = () => {
             <div className="glass-effect glow-border rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-foreground mb-6 heading-font">Get In Touch</h3>
               <p className="text-muted-foreground mb-8">
-                Whether you're interested in partnerships, investment opportunities, 
-                or simply want to learn more about our mission, we're here to connect.
+                Whether you are a researcher, startup, or institution, we welcome discussions around joint research, technical guidance, and long-term collaboration.
               </p>
 
               <div className="space-y-6">
@@ -117,8 +116,7 @@ const ContactSection = () => {
               <MessageSquare className="text-accent w-12 h-12 mx-auto mb-4" />
               <h4 className="text-xl font-bold text-foreground mb-4">Join Our Mission</h4>
               <p className="text-muted-foreground mb-6">
-                Be part of India's defense technology revolution. 
-                Together, we can build a stronger, more secure future.
+                We are actively looking to collaborate with researchers, mentors, and institutions working in autonomy, robotics, AI, and underwater systems.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button
@@ -135,7 +133,7 @@ const ContactSection = () => {
                   })}
                   className="px-6 py-2 rounded-lg"
                 >
-                  Learn About Partnerships
+                  Learn About Collaborations
                 </Button>
               </div>
             </motion.div>
@@ -148,7 +146,7 @@ const ContactSection = () => {
             className="glass-effect glow-border rounded-2xl p-8"
           >
             <h3 className="text-2xl font-bold text-foreground mb-6 heading-font">Send Message</h3>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -185,7 +183,7 @@ const ContactSection = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   className="w-full bg-background/30 border border-accent/30 rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:border-accent focus:outline-none transition-colors duration-200"
-                  placeholder="What's this about?"
+                  placeholder="Research collaboration / Partnership inquiry"
                   required
                 />
               </div>
@@ -198,7 +196,7 @@ const ContactSection = () => {
                   onChange={handleInputChange}
                   rows={6}
                   className="w-full bg-background/30 border border-accent/30 rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:border-accent focus:outline-none transition-colors duration-200 resize-none"
-                  placeholder="Tell us about your inquiry, partnership proposal, or how we can help..."
+                  placeholder="Briefly describe your interest, background, or how you would like to collaborate..."
                   required
                 />
               </div>

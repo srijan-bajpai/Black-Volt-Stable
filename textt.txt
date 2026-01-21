@@ -1,0 +1,286 @@
+🔹 HERO SECTION
+BLACKVOLT TECHNOLOGIES
+Engineering Autonomous Underwater Systems for Extreme Environments
+
+Blackvolt Technologies is a deep-tech startup focused on the design, development, and validation of autonomous unmanned underwater vehicles (UUVs) for operation in communication-denied, low-visibility, and high-uncertainty environments.
+
+Our work centers on underwater autonomy, where conventional navigation, sensing, and control methods fail — demanding intelligent decision-making, energy-aware planning, and resilient system design.
+
+We are currently developing a next-generation autonomous UUV platform, supported by in-house research across AI, underwater navigation, perception, and multi-system integration.
+
+[Get In Touch]
+[Explore the UUV Platform]
+
+🔒 Inducted with VNEST, Registered with Government Agencies
+
+🔹 WHY WE DO THIS
+Why We Exist
+
+Underwater environments represent one of the most challenging operational domains for autonomous systems.
+Severe signal attenuation, unreliable localization, limited sensing, and strict energy constraints make traditional robotic approaches insufficient.
+
+While unmanned underwater platforms are becoming central to global defence and maritime strategy, indigenous development of deeply autonomous UUV systems remains limited.
+
+Blackvolt Technologies was founded to help address this gap.
+
+We believe underwater autonomy must be researched, engineered, tested, and refined within India, through disciplined experimentation and collaboration with universities, research groups, and industry partners.
+
+We approach this challenge with humility, recognizing the complexity of real-world deployment and the importance of rigorous feedback from experienced researchers and practitioners.
+
+Our work is research-driven, engineering-led, and mission-oriented.
+
+🔹 VISION & MISSION
+Our Vision
+
+To contribute to India’s long-term maritime and strategic autonomy by developing indigenous unmanned underwater systems capable of intelligent, sustained, and cooperative operation without continuous external support.
+
+Our Mission
+
+To design, prototype, and validate a mission-grade autonomous UUV platform that integrates:
+
+robust underwater perception
+
+intelligent navigation and decision-making
+
+resilient, low-bandwidth communication
+
+energy-aware system design
+
+cooperative multi-agent behavior
+
+All systems are evaluated through measurable performance metrics, controlled testing environments, and repeatable validation pipelines, progressing from simulation to hardware deployment.
+
+🔹 CORE VALUES
+Innovation First
+
+Pursuing original approaches to underwater autonomy through modeling, experimentation, and iterative prototyping.
+
+Engineering Rigor
+
+Evaluating every subsystem against real-world underwater constraints, failure modes, and operational limits — not just simulations.
+
+Indigenous Capability
+
+Developing core autonomy, control, and system architecture in-house to reduce reliance on externally controlled technologies.
+
+National Responsibility
+
+Building systems intended to strengthen maritime security, resilience, and long-term technological independence.
+
+🔹 THE UUV PLATFORM (PRIMARY PRODUCT)
+Autonomous Unmanned Underwater Vehicle (UUV)
+
+Our primary product is a modular autonomous UUV platform, designed as a foundation for long-term research, field validation, and eventual operational deployment.
+
+Key Design Objectives
+
+Operate without continuous GPS or surface communication
+
+Navigate reliably in low-visibility and cluttered underwater environments
+
+Maximize endurance under strict energy constraints
+
+Enable autonomous mission execution with minimal human intervention
+
+Core Capabilities
+
+Autonomous underwater navigation
+
+Onboard perception and sensor fusion
+
+Intelligent mission planning and execution
+
+Fault-aware control and recovery logic
+
+Expandable payload and sensor architecture
+
+This platform serves as the basis for Project ANTARLEEN.
+
+🔹 PROJECT ANTARLEEN (FLAGSHIP PROGRAM)
+Project ANTARLEEN
+
+Project ANTARLEEN is Blackvolt’s flagship development effort focused on building a high-autonomy, long-endurance unmanned underwater vehicle.
+
+The project targets fundamental challenges in underwater robotics, including:
+
+navigation without continuous localization
+
+acoustic communication limitations
+
+energy-aware planning and control
+
+cooperative operation between multiple underwater units
+
+ANTARLEEN is designed as a scalable platform, not a one-off prototype — enabling iterative improvements in autonomy, sensing, and coordination.
+
+🔹 UUV SYSTEM ARCHITECTURE & CAD DESIGN
+System Architecture & Design Overview
+
+(This section is where your CAD model is displayed)
+
+The UUV is designed entirely in-house with emphasis on modularity, hydrodynamic efficiency, and system-level integration.
+
+Design Highlights
+
+Streamlined, pressure-resistant hull geometry
+
+Modular internal bays for electronics, power, and payload
+
+Distributed thruster configuration for fine-grained maneuverability
+
+Segregated wet and dry sections for safety and reliability
+
+System-Level Architecture
+
+Embedded compute stack for onboard AI and autonomy
+
+Sensor suite optimized for low-visibility underwater environments
+
+Power system designed for endurance and thermal stability
+
+Communication interfaces supporting acoustic and surfaced modes
+
+The CAD model represents an actively evolving design, refined through simulation, component-level testing, and integration studies.
+
+🔹 SUPPORTING RESEARCH AREAS
+Supporting Research Domains
+
+These domains exist to support and strengthen the UUV platform, not as independent products.
+
+AI & Robotics Engineering
+
+Real-time perception, sensor fusion, and decision-making pipelines designed for execution on resource-constrained embedded systems.
+
+Swarm & Multi-Agent Coordination
+
+Research into cooperative behaviors between multiple UUVs, including task allocation, redundancy, and fault tolerance.
+
+Autonomous Aerial Systems (Future Direction)
+
+Exploratory work on aerial platforms for surface support, testing, and cross-domain autonomy research.
+
+🔹 OUR ACHIEVEMENTS
+Our Achievements
+
+Milestones reflecting early technical progress, engineering discipline, and execution as a deep-tech startup.
+
+100+ Hours of Focused R&D
+Dedicated to system design, simulation, prototyping, and underwater autonomy research.
+
+5+ AI Models Developed & Tested
+Perception, navigation, and control models evaluated under real hardware and energy constraints.
+
+3 Functional Prototypes
+Early-stage mechanical, electronic, and software prototypes validating underwater system integration.
+
+Registered Company
+BLACKVOLT Technologies Pvt. Ltd. formally incorporated and compliant with government requirements.
+
+Each milestone represents reviewed design iterations and documented learnings rather than one-off demonstrations.
+
+Milestone Timeline
+
+Company Registration — 2024
+Formal incorporation establishing a legal foundation for long-term R&D and collaboration.
+
+Project Initiation — 2024
+Launch of internal research programs focused on underwater autonomy and AI-driven navigation.
+
+Technology Development — 2025
+Development of proprietary autonomy and sensor-fusion frameworks validated through simulation and bench-level testing.
+
+Prototype Testing — 2025 (Year-End)
+Successful controlled-environment testing of navigation, propulsion, and control subsystems.
+
+🔹 LOOKING AHEAD
+Looking Ahead
+
+Our near-term roadmap is tightly aligned around maturing the UUV platform.
+
+2025 Technical Goals
+
+Complete a fully integrated autonomous UUV and begin extended controlled and semi-open water testing.
+
+Collaboration & Expansion
+
+Work closely with academic labs, mentors, and industry partners to refine autonomy, sensing, and system reliability.
+
+Engagement & Recognition
+
+Participate in defence-aligned research programs, technical evaluations, and collaborative innovation initiatives.
+
+🔹 OUR TEAM
+Our Team
+
+Meet the engineers behind BLACKVOLT Technologies — united by curiosity, technical rigor, and a shared commitment to advancing India’s autonomous underwater capability.
+
+Mr. Garv Pathak
+Co-Founder & CEO — AI Systems & Strategy
+
+Leads overall system architecture, AI integration, and long-term technical direction. Focused on aligning research, engineering, and strategic collaborations.
+
+Expertise:
+AI/ML • Autonomous Systems • Defence Technology • System Strategy
+
+Mr. Sarthak Varchaswi
+Co-Founder & CTO — Robotics & UUV Engineering
+
+Heads mechanical design, embedded systems, and autonomy integration across underwater platforms.
+
+Expertise:
+Robotics • Autonomous Platforms • Hardware Design • Systems Engineering
+
+We actively seek mentorship, peer review, and collaborative input to strengthen both our research direction and engineering outcomes.
+
+🔹 UNITED BY PURPOSE
+United by Purpose
+
+As students transitioning into deep-tech entrepreneurship, we combine academic foundations with hands-on engineering. Our strength lies in disciplined experimentation, rapid learning, and a shared belief that meaningful defence technology must be built with responsibility, rigor, and intent.
+
+Our Values
+
+Innovation — Experimentation, modeling, and iterative prototyping
+Dedication — Long-term learning and refinement
+Patriotism — Contributing to national security and self-reliance
+
+🔹 OTHER PRODUCTS & FUTURE DIRECTIONS
+Future Platforms & Research Directions
+
+While our current focus is entirely on underwater systems, future research directions include:
+
+Autonomous surface and aerial support platforms
+
+Distributed maritime sensor networks
+
+Cross-domain autonomy spanning air–surface–subsea systems
+
+These efforts will build upon the UUV platform, not replace it.
+
+🔹 CONTACT US
+Contact Us
+
+Interested in collaboration, research discussions, or joint development opportunities? We’d be glad to connect.
+
+Get In Touch
+
+Whether you are a researcher, startup, or institution, we welcome discussions around joint research, technical guidance, and long-term collaboration.
+
+Email: info@blackvolt.in
+
+Phone: +91-85306-75353
+Location: 600127, VNEST Office, AB3 Ground Floor, VIT Chennai Campus,
+Vandalur-Kelambakkam Road, Chennai, Tamilnadu, India
+
+Send Message
+
+Subject placeholder:
+Research collaboration / Technical discussion / Partnership inquiry
+
+Message placeholder:
+Briefly describe your interest, background, or how you would like to collaborate with our team.
+
+Join Our Mission
+
+We are actively looking to collaborate with researchers, mentors, and institutions working in autonomy, robotics, AI, and underwater systems.
+
+CTA: Learn About Collaborations

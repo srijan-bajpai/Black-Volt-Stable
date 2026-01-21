@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Linkedin, Github, Mail, Code, Cpu, Rocket } from 'lucide-react';
+import { Linkedin, Github, Mail, Cpu, Rocket } from 'lucide-react';
 import { toast } from '@/components/ui/use-toast';
 
 const TeamSection = () => {
@@ -18,25 +18,18 @@ const TeamSection = () => {
 
   const teamMembers = [
     {
-      name: 'Co-Founder & CEO',
-      role: 'AI Systems & Strategy',
-      description: 'Leading the vision for AI-powered defense solutions and strategic partnerships.',
+      name: 'Mr. Garv Pathak',
+      role: 'Co-Founder & CEO — AI Systems & Strategy',
+      description: 'Leads overall system architecture, AI integration, and long-term technical direction. Focused on aligning research, engineering, and strategic collaborations.',
       icon: Cpu,
-      skills: ['AI/ML', 'Strategic Planning', 'Defense Technology', 'Leadership']
+      skills: ['AI/ML', 'Autonomous Systems', 'Defence Technology', 'System Strategy']
     },
     {
-      name: 'Co-Founder & CTO',
-      role: 'Drone Engineering',
-      description: 'Spearheading drone hardware development and autonomous systems integration.',
+      name: 'Mr. Sarthak Varchaswi',
+      role: 'Co-Founder & CTO — Robotics & UUV Engineering',
+      description: 'Heads mechanical design, embedded systems, and autonomy integration across underwater platforms.',
       icon: Rocket,
-      skills: ['Drone Engineering', 'Autonomous Systems', 'Hardware Design', 'Innovation']
-    },
-    {
-      name: 'Web Developer',
-      role: 'Digital Solutions',
-      description: 'Creating digital platforms and web solutions to showcase our technology.',
-      icon: Code,
-      skills: ['Web Development', 'UI/UX Design', 'Digital Marketing', 'Tech Communication']
+      skills: ['Robotics', 'Autonomous Platforms', 'Hardware Design', 'Systems Engineering']
     }
   ];
 
@@ -53,12 +46,11 @@ const TeamSection = () => {
             Our Team
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Meet the passionate minds behind BLACKVOLT Technologies, united by a common vision 
-            to revolutionize India's defense capabilities.
+            Meet the engineers behind BLACKVOLT Technologies — united by curiosity, technical rigor, and a shared commitment to advancing India’s autonomous underwater capability.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 gap-12 mb-16 max-w-5xl mx-auto">
           {teamMembers.map((member, index) => (
             <motion.div
               key={member.name}
@@ -71,17 +63,14 @@ const TeamSection = () => {
                 <div className="w-32 h-32 bg-neutral-800 border border-neutral-700 rounded-full mx-auto flex items-center justify-center pulse-glow">
                   <member.icon className="text-foreground w-16 h-16" />
                 </div>
-                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-accent text-background px-3 py-1 rounded-full text-xs font-semibold">
-                  {member.role.split(' ')[0]}
-                </div>
               </div>
 
               <h3 className="text-xl font-bold text-foreground mb-2 heading-font">{member.name}</h3>
-              <p className="text-muted-foreground mb-4">{member.role}</p>
-              <p className="text-muted-foreground mb-6 text-sm">{member.description}</p>
+              <p className="text-accent font-medium mb-4">{member.role}</p>
+              <p className="text-muted-foreground mb-6 text-sm leading-relaxed">{member.description}</p>
 
               <div className="mb-6">
-                <h4 className="text-accent font-semibold mb-3">Expertise</h4>
+                <h4 className="text-foreground font-semibold mb-3">Expertise</h4>
                 <div className="flex flex-wrap gap-2 justify-center">
                   {member.skills.map((skill, idx) => (
                     <span
@@ -132,22 +121,21 @@ const TeamSection = () => {
         >
           <h3 className="text-3xl font-bold text-foreground mb-6 heading-font">United by Purpose</h3>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            As college students turned entrepreneurs, we bring fresh perspectives, 
-            boundless energy, and unwavering dedication to India's defense technology advancement.
+            As students transitioning into deep-tech entrepreneurship, we combine academic foundations with hands-on engineering.
           </p>
-          
+
           <div className="grid md:grid-cols-3 gap-6">
             <div className="glass-effect rounded-xl p-6">
               <h4 className="font-bold text-foreground mb-2">Innovation</h4>
-              <p className="text-muted-foreground text-sm">Pushing boundaries with creative solutions and cutting-edge technology</p>
+              <p className="text-muted-foreground text-sm">Experimentation, modeling, and iterative prototyping</p>
             </div>
             <div className="glass-effect rounded-xl p-6">
               <h4 className="font-bold text-foreground mb-2">Dedication</h4>
-              <p className="text-muted-foreground text-sm">Committed to excellence and continuous learning in defense technology</p>
+              <p className="text-muted-foreground text-sm">Long-term learning and refinement</p>
             </div>
             <div className="glass-effect rounded-xl p-6">
               <h4 className="font-bold text-foreground mb-2">Patriotism</h4>
-              <p className="text-muted-foreground text-sm">Driven by love for our nation and desire to contribute to its security</p>
+              <p className="text-muted-foreground text-sm">Contributing to national security and self-reliance</p>
             </div>
           </div>
         </motion.div>
