@@ -37,7 +37,7 @@ const AchievementsSection = () => {
 
   const stats = [
     { number: '100+', label: 'Hours of R&D', icon: Users },
-    { number: '5+', label: 'AI Models Developed', icon: Cpu },
+    { number: '5+', label: 'Simulation-Based Models Developed', icon: Cpu },
     { number: '3', label: 'Functional Prototypes', icon: Target },
     { number: '1', label: 'Registered Company', icon: Trophy }
   ];

@@ -22,14 +22,16 @@ const TeamSection = () => {
       role: 'Co-Founder & CEO — AI Systems & Strategy',
       description: 'Leads overall system architecture, AI integration, and long-term technical direction. Focused on aligning research, engineering, and strategic collaborations.',
       icon: Cpu,
-      skills: ['AI/ML', 'Autonomous Systems', 'Defence Technology', 'System Strategy']
+      skills: ['AI/ML', 'Autonomous Systems', 'Defence Technology', 'System Strategy'],
+      linkedin: 'https://www.linkedin.com/in/garv-pathak/'
     },
     {
       name: 'Mr. Sarthak Varchaswi',
       role: 'Co-Founder & CTO — Robotics & UUV Engineering',
       description: 'Heads mechanical design, embedded systems, and autonomy integration across underwater platforms.',
       icon: Rocket,
-      skills: ['Robotics', 'Autonomous Platforms', 'Hardware Design', 'Systems Engineering']
+      skills: ['Robotics', 'Autonomous Platforms', 'Hardware Design', 'Systems Engineering'],
+      linkedin: 'https://www.linkedin.com/in/sarthakvarchasvi/'
     }
   ];
 
@@ -84,14 +86,16 @@ const TeamSection = () => {
               </div>
 
               <div className="flex justify-center space-x-4">
-                <motion.button
+                <motion.a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, color: '#f4f4f4' }}
                   whileTap={{ scale: 0.9 }}
-                  onClick={() => handleSocialClick('LinkedIn', member.name)}
                   className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   <Linkedin size={20} />
-                </motion.button>
+                </motion.a>
                 <motion.button
                   whileHover={{ scale: 1.2, color: '#f4f4f4' }}
                   whileTap={{ scale: 0.9 }}

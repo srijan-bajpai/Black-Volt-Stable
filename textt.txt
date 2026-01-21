@@ -167,7 +167,7 @@ Milestones reflecting early technical progress, engineering discipline, and exec
 100+ Hours of Focused R&D
 Dedicated to system design, simulation, prototyping, and underwater autonomy research.
 
-5+ AI Models Developed & Tested
+5+  Models Developed & Tested
 Perception, navigation, and control models evaluated under real hardware and energy constraints.
 
 3 Functional Prototypes

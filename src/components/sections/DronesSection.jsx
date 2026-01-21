@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Anchor, Radio, Battery, Gauge, Eye, Server, Cpu } from 'lucide-react';
+import uuvConcept from '@/assets/uuv_concept.jpg';
 
 const DronesSection = () => {
   const ref = useRef(null);
@@ -109,7 +110,7 @@ const DronesSection = () => {
               <img
                 className="w-full h-64 object-cover rounded-lg mb-4"
                 alt="Underwater Autonomous Vehicle Concept"
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+                src={uuvConcept}
               />
               <h4 className="text-xl font-bold text-foreground mb-2">Designed In-House</h4>
               <p className="text-muted-foreground">
