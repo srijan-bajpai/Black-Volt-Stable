@@ -7,17 +7,21 @@ import { toast } from '@/components/ui/use-toast';
 
 
 const Footer = () => {
-  const handleSocialClick = (platform) => {
+  const handleSocialClick = (social) => {
+    if (social.href) {
+      window.open(social.href, '_blank', 'noopener,noreferrer');
+      return;
+    }
     toast({
       title: "🚧 Social Link",
-      description: `${platform} integration isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀`
+      description: `${social.label} integration isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀`
     });
   };
 
   const socialLinks = [
     { icon: Github, label: 'GitHub' },
     { icon: Instagram, label: 'Instagram' },
-    { icon: Linkedin, label: 'LinkedIn' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/backvolt/' },
     { icon: Mail, label: 'Email' }
   ];
 
@@ -83,7 +87,7 @@ const Footer = () => {
                   key={social.label}
                   whileHover={{ scale: 1.2, rotate: 5, color: '#f4f4f4' }}
                   whileTap={{ scale: 0.9 }}
-                  onClick={() => handleSocialClick(social.label)}
+                  onClick={() => handleSocialClick(social)}
                   className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   <social.icon size={20} />
