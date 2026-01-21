@@ -73,9 +73,9 @@ const Footer = () => {
           <div className="space-y-4">
             <span className="text-lg font-semibold text-foreground heading-font">Connect With Us</span>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>Email: info@blackvolt.tech</p>
-              <p>Phone: +91 XXXX-XXXX-XX</p>
-              <p>Location: India</p>
+              <p>Email: info@blackvolt.in</p>
+              <p>Phone: +91-85306-75353</p>
+              <p>Location: 600127, VNEST Office, VIT Chennai, AB3 Ground Floor, Vandalur-Kelambakkam Road, Chennai, Tamilnadu, India</p>
             </div>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
