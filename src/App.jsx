@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import Navigation from '@/components/Navigation';
 import HomePage from '@/pages/HomePage';
 import PrivacyPolicy from '@/pages/PrivacyPolicy';
+import Recruitments from '@/pages/Recruitments';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/recruitments" element={<Recruitments />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         

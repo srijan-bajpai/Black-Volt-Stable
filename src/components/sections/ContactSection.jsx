@@ -5,8 +5,10 @@ import { useRef } from 'react';
 import { Mail, Phone, MapPin, Send, MessageSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
+import { useNavigate } from 'react-router-dom';
 
 const ContactSection = () => {
+  const navigate = useNavigate();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.2 });
   const [formData, setFormData] = useState({
@@ -118,15 +120,24 @@ const ContactSection = () => {
                 Be part of India's defense technology revolution. 
                 Together, we can build a stronger, more secure future.
               </p>
-              <Button
-                onClick={() => toast({
-                  title: "🚧 Partnership Info",
-                  description: "Partnership details aren't implemented yet—but don't worry! You can request it in your next prompt! 🚀"
-                })}
-                className="bg-foreground text-background hover:bg-foreground/90 px-6 py-2 rounded-lg"
-              >
-                Learn About Partnerships
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Button
+                  onClick={() => navigate('/recruitments')}
+                  className="bg-foreground text-background hover:bg-foreground/90 px-6 py-2 rounded-lg"
+                >
+                  Join Us
+                </Button>
+                <Button
+                  variant="outline"
+                  onClick={() => toast({
+                    title: "🚧 Partnership Info",
+                    description: "Partnership details aren't implemented yet—but don't worry! You can request it in your next prompt! 🚀"
+                  })}
+                  className="px-6 py-2 rounded-lg"
+                >
+                  Learn About Partnerships
+                </Button>
+              </div>
             </motion.div>
           </motion.div>
 

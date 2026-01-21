@@ -3,9 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Github, Instagram, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
+import { useNavigate } from 'react-router-dom';
 import logo from '@/assets/logo.png'; // Add this at the top of the file
 
 const Navigation = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -23,7 +25,8 @@ const Navigation = () => {
     { name: 'Drones', href: '#drones' },
     { name: 'Achievements', href: '#achievements' },
     { name: 'Team', href: '#team' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Contact', href: '#contact' },
+    { name: 'Recruitments', href: '/recruitments' }
   ];
 
   const socialLinks = [
@@ -38,6 +41,9 @@ const Navigation = () => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
+    } else {
+      navigate(href);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     setIsOpen(false);
   };
